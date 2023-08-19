@@ -93,12 +93,7 @@ const Community = () => {
                     alt="Logo"
                   />
                   <p className="card-text pt-2 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Accusantium, quibusdam repudiandae, voluptates facere maxime
-                    dolore vero, consequuntur asperiores nemo officiis debitis
-                    cum? commodo ex non excepteur duis sunt velit enim.
-                    Voluptate laboris sint cupidatat ullamco ut ea consectetur
-                    et est culpa et culpa duis.
+                  We at GDSC, AISSMS Institute of Information Technology are ambitious towards building a community that aims to change the world with technology. We do this by organizing insightful events, hands-on workshops, interactive sessions, hackathons, study-jams and more. We believe in creating a peer-to-peer learning environment to grow together as a community.
                   </p>
                 </div>
               </div>
@@ -117,13 +112,10 @@ const Community = () => {
                     Our Mission and Vision
                   </h2>
                   <div className="msg-text text-center">
-                    Our MISSION and VISION is to build an environment for
-                    students where they can grow as coders and developers and
-                    contribute to the community. We strive to learn and grow
-                    together as one.
+                  Our MISSION and VISION is to build a peer-to-peer learning environment for students where they can grow together as developers and contribute to solving real-world problems.
                   </div>
                 </div>
-                <div className="msg-img cursor-pointer"></div>
+                <img src="https://gdsc-aissmsioit.github.io/static/media/about-us.8d3f27c0bea7cc45db7f.jpeg" className="msg-img cursor-pointer"></img>
               </div>
             </div>
           </Col>

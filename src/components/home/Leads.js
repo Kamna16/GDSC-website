@@ -1,10 +1,10 @@
 const Leads = [
   {
-    to_name: "Prarthana Chandak",
+    to_name: "Siddhant Sangale",
     to_email: "prarthanachandak@gmail.com",
   },
   {
-    to_name: "Ashish Patil",
+    to_name: "Kamna Bhadoriya",
     to_email: "ashishpatil96579@gmail.com",
   },
   {

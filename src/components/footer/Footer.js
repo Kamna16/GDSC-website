@@ -65,8 +65,8 @@ const Footer = () => {
                       </NavLink>
                     </li>
                     <li className="gogreen col-lg-2 col-md-4 col-6">
-                      <NavLink onClick={scrollToTop} to="/team/dsa_cp_team">
-                        DSA/CP
+                      <NavLink onClick={scrollToTop} to="/team/design_team">
+                        Design
                       </NavLink>
                     </li>
                     <li className="gogreen col-lg-2 col-md-4 col-6 quick-links-li">

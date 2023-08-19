@@ -17,6 +17,7 @@ import Cloud from "./cloud";
 import ML from "./ml";
 import Android from "./android";
 import Management from "./management";
+import Design from "./design";
 
 import TeamCard from "./TeamCard";
 
@@ -61,6 +62,9 @@ const Team = () => {
   const CloudTeam = Cloud.map((member) => (
     <TeamCard key={member.id} member={member} />
   ));
+  const DesignTeam = Design.map((member) => (
+    <TeamCard key={member.id} member={member} />
+  ));
 
   const MLTeam = ML.map((member) => (
     <TeamCard key={member.id} member={member} />
@@ -79,6 +83,7 @@ const Team = () => {
       ? {
           web: <Slider {...settings}>{WebTeam}</Slider>,
           cloud: <Slider {...settings}>{CloudTeam}</Slider>,
+          design: <Slider {...settings}>{DesignTeam}</Slider>,
           ml: <Slider {...settings}>{MLTeam}</Slider>,
           android: <Slider {...settings}>{AndroidTeam}</Slider>,
           management: <Slider {...settings}>{ManagementTeam}</Slider>,
@@ -86,6 +91,7 @@ const Team = () => {
       : {
           web: WebTeam,
           cloud: CloudTeam,
+          design: DesignTeam,
           ml: MLTeam,
           android: AndroidTeam,
           management: ManagementTeam,
@@ -97,6 +103,7 @@ const Team = () => {
       setTeams({
         web: <Slider {...settings}>{WebTeam}</Slider>,
         cloud: <Slider {...settings}>{CloudTeam}</Slider>,
+        design: <Slider {...settings}>{DesignTeam}</Slider>,
         ml: <Slider {...settings}>{MLTeam}</Slider>,
         android: <Slider {...settings}>{AndroidTeam}</Slider>,
         management: <Slider {...settings}>{ManagementTeam}</Slider>,
@@ -105,6 +112,7 @@ const Team = () => {
       setTeams({
         web: WebTeam,
         cloud: CloudTeam,
+        design: DesignTeam,
         ml: MLTeam,
         android: AndroidTeam,
         management: ManagementTeam,
@@ -163,7 +171,7 @@ const Team = () => {
                 <h3 className="font-weight-bold">Faculty Advisor</h3>
               </Fade>
               <img
-                src=""
+                src="https://i.ibb.co/16LcLWP/Wagh-Sir.png"
                 className="img-fluid lead-img"
                 alt="Faculty_Advisor"
               />
@@ -187,11 +195,11 @@ const Team = () => {
                 <h3 className="font-weight-bold">GDSC Lead</h3>
               </Fade>
               <img
-                src="https://i.ibb.co/QbYjh69/Prarthana-Chandak.jpg"
+                src="https://i.ibb.co/p1Zkk2v/sid.jpg"
                 className="img-fluid lead-img"
                 alt="Lead_Image"
               />
-              <h5>Prarthana Chandak</h5>
+              <h5>Siddhant Sangale</h5>
               <span></span>
               <div className="social-ico">
                 <a
@@ -241,52 +249,11 @@ const Team = () => {
           {teams.cloud}
         </div>
 
-        <div id="dsa_cp_team" className="row">
+        <div id="design_team" className="row">
           <Fade up>
-            <h3 className="my-5 font-weight-bold">DSA/CP Team</h3>
+            <h3 className="my-5 font-weight-bold">Design Team</h3>
           </Fade>
-          <Fade up>
-            <div className="col-lg-12 col-sm-12 teams">
-              <img
-                src="https://i.ibb.co/K5WwkbT/HARSHAL-RAUNDAL.jpg"
-                className="img-fluid team-img"
-                alt="Lead_Image"
-              />
-              <h5>Harshal Raundal</h5>
-              <h5>DSA Lead</h5>
-              <span></span>
-              <div className="social-ico-team col-lg-12">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.linkedin.com/in/harshal-raundal-8a25861a8"
-                >
-                  <i className="fa fa-linkedin ico-link"></i>
-                </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/HarshalRaundal"
-                >
-                  <i className="fa fa-github ico-github"></i>
-                </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.instagram.com/_.harshal__/"
-                >
-                  <i className="fa fa-instagram ico-insta"></i>
-                </a>
-                <a
-                  href="https://github.com/HarshalRaundal"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fa fa-link ico-link"></i>
-                </a>
-              </div>
-            </div>
-          </Fade>
+          {teams.design}
         </div>
 
         <div id="ml_team" className="row">

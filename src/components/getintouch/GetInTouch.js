@@ -26,7 +26,7 @@ const Contact = () => {
   const [data, setData] = useState({
     fullname: "",
     email: "",
-    mobile_number: "",
+    mobilenumber: "",
     msg: "",
   });
 
@@ -43,12 +43,12 @@ const Contact = () => {
 
   const formSubmit = async (event) => {
     event.preventDefault();
-    const { fullname, email, mobile_number, msg } = data;
+    const { fullname, email, mobilenumber, msg } = data;
     const contactError = document.getElementById("contact_error");
     if (
       fullname.length === 0 ||
       email.length === 0 ||
-      mobile_number.length === 0 ||
+      mobilenumber.length === 0 ||
       msg.length === 0
     ) {
       contactError.classList.remove("d-none");
@@ -72,7 +72,7 @@ const Contact = () => {
       setData({
         fullname: "",
         email: "",
-        mobile_number: "",
+        mobilenumber: "",
         msg: "",
       });
 
@@ -207,11 +207,11 @@ const Contact = () => {
                             <input
                               style={inputStyle}
                               autoComplete="off"
-                              type="email"
+                              type="text"
                               className="form-control contact-input"
                               id="exampleFormControlInput1"
-                              name="email"
-                              value={data.mobile_number}
+                              name="mobilenumber"
+                              value={data.mobilenumber}
                               onChange={InputEvent}
                             />
                           </div>

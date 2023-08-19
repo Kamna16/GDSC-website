@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Card from "./Card";
 
-import Home_Svg from "../../images/home/home_svg.png";
+// import Home_Svg from "../../images/home/home_svg.png";
 
 import Bubbles from "../bubbles/Bubbles";
 
@@ -273,7 +273,7 @@ const Home = () => {
             data-aos-anchor=".example-selector"
             data-aos-anchor-placement="top-center"
           >
-            <img className="cursor-pointer" src={Home_Svg} alt="Home_Svg" />
+            <img className="cursor-pointer" src="https://gdsc-aissmsioit.github.io/static/media/Home.e6453183cd7137474a89.gif" alt="Home_Svg" />
           </div>
           <div
             className="column"
@@ -419,7 +419,7 @@ const Home = () => {
             </Fade>
             <Fade up>
               <div className="col-lg-4 col-sm-12 stack-name">
-                <span className="-button dsacp-domain">DSA / CP</span>
+                <span className="-button dsacp-domain"> Design</span>
               </div>
             </Fade>
           </div>
@@ -438,11 +438,11 @@ const Home = () => {
                 <div id="gdsc_lead" className="row">
                   <div className="col-lg-12 col-sm-12 member-body">
                     <img
-                      src="https://i.ibb.co/QbYjh69/Prarthana-Chandak.jpg"
+                      src="https://i.ibb.co/p1Zkk2v/sid.jpg"
                       className="img-fluid lead-img"
                       alt="Lead_Image"
                     />
-                    <h5>Prarthana Chandak</h5>
+                    <h5>Siddhant Sangale</h5>
                     <span></span>
                     <div className="social-ico m-0">
                       <a
@@ -605,7 +605,7 @@ const Home = () => {
                             onChange={handleChange}
                           />
                           <span className="domain_example">
-                            Ex. Web, Cloud, AI/ML, DSA/CP, Android, General
+                            Ex. Web, Cloud, AI/ML, Design, Android, General
                           </span>
                           <input
                             type="text"
